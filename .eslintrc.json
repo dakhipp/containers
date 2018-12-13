@@ -1,0 +1,30 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "prettier",
+    "jest"
+  ],
+  "rules": {
+    "no-console": 1,
+    "prettier/prettier": ["error", {
+      "trailingComma": "es5",
+      "semi": false,
+      "singleQuote": true
+    }]
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest/globals": true
+  },
+  "globals": {
+    "Promise": true,
+    "require": true,
+    "__dirname": true,
+    "module": true
+  }
+}
